@@ -2,10 +2,8 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
+// Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyAgdYyc9ASEjD83gSIIgATUk1qUPQNj9dU",
     authDomain: "stowage-home.firebaseapp.com",

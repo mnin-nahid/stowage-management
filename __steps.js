@@ -7,6 +7,9 @@
  * 6. npm install react-bootstrap bootstrap || install and setup react-bootsrap
  * 7. added header components
  * 8. add footer components
+ * 8. add Banner components
+ * 8. add Product components
+ * 8. add Blogs components
  * 9.
  * 
  * 
