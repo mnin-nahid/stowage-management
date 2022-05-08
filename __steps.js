@@ -10,7 +10,8 @@
  * 8. add Banner components
  * 8. add Product components
  * 8. add Blogs components
- * 9.
+ * 9.emplement passowerd signup and signin
+ * 10. protectec route emplement
  * 
  * 
  * 

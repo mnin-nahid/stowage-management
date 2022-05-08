@@ -1,0 +1,74 @@
+[
+  {
+    "id": "01",
+    "name": "Dell Inspiron 15 3510 Intel CDC N4020 15.6 Inch HD Display Carbon Black Laptop",
+    "price": 36800,
+    "img": "https://res.cloudinary.com/dgfgzd6m9/image/upload/v1648274183/laptop/dell-inspiron-15-3510-intel-cdc-n4020-156-inch-11640426165_h597nw.webp"
+  },
+  {
+    "id": "02",
+    "name": "Acer Aspire 3 A315-58G-54LW Intel Core i5",
+    "price": 69500,
+    "img": "https://res.cloudinary.com/dgfgzd6m9/image/upload/v1648274326/laptop/acer-aspire-3-a315-58g-54lw-intel-core-i5-1135g7-31633519755_jqrnhn.webp"
+  },
+  {
+    "id": "03",
+    "name": "Lenovo IdeaPad Slim 3i 15ITL6 11th Gen Intel",
+    "price": 70800,
+    "img": "https://res.cloudinary.com/dgfgzd6m9/image/upload/v1648274431/laptop/lenovo-ideapad-slim-3i-15itl6-11th-gen-intel-core-11636810342_pawfa4.webp"
+  },
+  {
+    "id": "04",
+    "name": "Acer Swift 3 SF314-42 AMD Ryzen 5 4500U 14 Inch",
+    "price": 81380,
+    "img": "https://res.cloudinary.com/dgfgzd6m9/image/upload/v1648274525/laptop/acer-swift-3-sf313-53-579s-11th-gen-intel-core-i5-11609840971_ubww31.webp"
+  },
+  {
+    "id": "05",
+    "name": "HP 15s-du1115TU Intel CDC N4020 15.6 Inch HD",
+    "price": 33200,
+    "img": "https://res.cloudinary.com/dgfgzd6m9/image/upload/v1648274667/laptop/hp-15s-du1115tu-intel-cdc-n4020-156-inch-hd-11636263483_dkcouq.webp"
+  },
+  {
+    "id": "06",
+    "name": "MSI Modern 14 B10MW Intel Core i3 10110U 14 Inch",
+    "price": 52080,
+    "img": "https://res.cloudinary.com/dgfgzd6m9/image/upload/v1648274791/laptop/msi-modern-14-b10mw-intel-core-i3-10110u-14-inch-11635674318_lws5rh.webp"
+  },
+  {
+    "id": "07",
+    "name": "Chuwi Corebook X Intel Core i5 8259U 14 Inch 2K",
+    "price": 53710,
+    "img": "https://res.cloudinary.com/dgfgzd6m9/image/upload/v1648274861/laptop/chuwi-corebook-x-intel-core-i5-8259u-14-inch-2k-11640325007_mv099u.webp"
+  },
+  {
+    "id": "08",
+    "name": "Asus ExpertBook L1 L1500CDA AMD Ryzen 3 3250U",
+    "price": 55340,
+    "img": "https://res.cloudinary.com/dgfgzd6m9/image/upload/v1648274945/laptop/asus-expertbook-l1-l1500cda-amd-ryzen-3-3250u-11641190433_yavofr.webp"
+  },
+  {
+    "id": "09",
+    "name": "Dell Inspiron 15 3511 11th Gen Intel Core i5",
+    "price": 67810,
+    "img": "https://res.cloudinary.com/dgfgzd6m9/image/upload/v1648275081/laptop/dell-inspiron-15-3511-11th-gen-intel-core-i5-11639209110_kofeuw.webp"
+  },
+  {
+    "id": "10",
+    "name": "HP Pavilion 15-eh1678AU AMD Ryzen 7 5700U 15.6",
+    "price": 81380,
+    "img": "https://res.cloudinary.com/dgfgzd6m9/image/upload/v1648275165/laptop/hp-pavilion-15-eh1678au-amd-ryzen-7-5700u-156-11644062374_ey5pcn.webp"
+  },
+  {
+    "id": "11",
+    "name": "Apple MacBook Air Late 2020 Apple M1 Chip",
+    "price": 106870,
+    "img": "https://res.cloudinary.com/dgfgzd6m9/image/upload/v1648275265/laptop/apple-macbook-air-late-2020-apple-m1-chip-8gb-11607861922_ypgiq9.webp"
+  },
+  {
+    "id": "12",
+    "name": "Apple MacBook Pro (Late 2021) Apple M1 Pro",
+    "price": 272000,
+    "img": "https://res.cloudinary.com/dgfgzd6m9/image/upload/v1648275354/laptop/apple-macbook-pro-late-2021-apple-m1-pro-chip-11637124732_dlbq4m.webp"
+  }
+]

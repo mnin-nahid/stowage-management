@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 
 const Signin = () => {
@@ -11,6 +11,9 @@ const Signin = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+    const location = useLocation();
+
+    let from = location.state?.from?.pathname;
 
     //Handle Sign in
     const handlesignin = e => {
@@ -23,8 +26,12 @@ const Signin = () => {
 
     }
 
-    if(user){
+    if (user) {
         navigate('/');
+    }
+
+    if (user) {
+        navigate(from, { replace: true });
     }
 
     // hendle Error
@@ -75,6 +82,9 @@ const Signin = () => {
                     </button>
                 </div>
                 <p className="forgot-password text-end pt-3">
+                    Are you new hear <Link to='/signup'>Sign up</Link> now
+                </p>
+                <p className="forgot-password text-start pt-3">
                     Forgot <a href="#">password?</a>
                 </p>
             </form>

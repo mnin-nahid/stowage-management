@@ -1,6 +1,6 @@
 import React from 'react';
 import { useCreateUserWithEmailAndPassword, useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 
 const Signup = () => {
@@ -75,8 +75,8 @@ const Signup = () => {
                         Sign Up
                     </button>
                 </div>
-                <p className="forgot-password text-end">
-                    Already registered <a href="/sign-in">sign in?</a>
+                <p className="forgot-password text-end pt-3">
+                    Alrady have an account? <Link to='/signin'>Sign in</Link> now
                 </p>
             </form>
         </div>
