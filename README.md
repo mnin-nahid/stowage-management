@@ -6,7 +6,7 @@
 
 live site server [Link server](https://mysterious-beach-33208.herokuapp.com/).
 
-live site client [Link client](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-mnin-nahid).
+live site client [Link client](https://stowage-home.web.app/).
 
 
 ## How to work in this website
