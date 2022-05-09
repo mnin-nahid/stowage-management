@@ -2,6 +2,7 @@ import React from 'react';
 import { useCreateUserWithEmailAndPassword, useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Looding from '../../Shared/Looding/Looding';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Signup = () => {
@@ -34,6 +35,9 @@ const Signup = () => {
     if (user) {
         navigate('/');
     }
+    if(loading){
+        return <Looding></Looding>
+    };
 
 
     return (

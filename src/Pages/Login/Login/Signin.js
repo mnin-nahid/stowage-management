@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Looding from '../../Shared/Looding/Looding';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Signin = () => {
@@ -42,6 +43,9 @@ const Signin = () => {
 
     if (user) {
         navigate(from, { replace: true });
+    }
+    if(loading){
+        return <Looding></Looding>
     }
 
     // Handle Error
