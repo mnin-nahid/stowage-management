@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Ourservice.css'
 
 const OurService = () => {
     const [services, setServices] = useState([]);
@@ -8,9 +9,9 @@ const OurService = () => {
         .then(data => setServices(data))
     },[])
     return (
-        <div className='mt-4'>
+        <div className='mt-4 container'>
             <h2 className='text-center font-weight-normal'>Why We Are The Best</h2>
-            <div>
+            <div className='our-services'>
                 {
                     services.map(service => <div>
                         <img src={service.img} alt="" />

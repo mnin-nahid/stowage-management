@@ -18,7 +18,7 @@ const Inventories = () => {
             <h2 className='text-center mt-5 font-weight-normal'>Inventories</h2>
             <div className='items-container container'>
                 {
-                    homePageProducts.map(product => <div key={product._id}>
+                    homePageProducts.map(product => <div className='text-center' key={product._id}>
                         <img src={product.img} alt="" />
                         <h5>{product.name}</h5>
                         <p>{product.price}</p>
@@ -26,7 +26,9 @@ const Inventories = () => {
                     </div>)
                 }
             </div>
-            <Link to="/manageinventories" className='btn btn-info mx-auto'>Manage Inventories</Link>
+            <div className='text-center'>
+                <Link to="/manageinventories" className='btn btn-info mx-auto'>Manage Inventories</Link>
+            </div>
         </div>
     );
 };

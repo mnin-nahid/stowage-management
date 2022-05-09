@@ -25,11 +25,13 @@ const ManageInventories = () => {
     return (
         <div className='container'>
             <h3 className='text-center my-3'>All items is hear</h3>
-            <Nav.Link className='w-25 mx-auto text-center btn btn-info text-white my-4' as={Link} to="/addnewitem">Add new item</Nav.Link>
+            <div className='text-center'>
+                <Link className='w-25 mx-auto text-center btn btn-info text-white my-4' as={Link} to="/addnewitem">Add new item</Link>
+            </div>
 
             <Table>
                 {
-                    products.map(product => <div>
+                    products.map(product => <div className='text-center justify-content-center'>
                         <td> <img className='w-25 border' src={product.img} alt="" /> </td>
                         <td className='border'>{product.name}</td>
                         <td className='border'>{product.quantity}</td>

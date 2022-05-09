@@ -32,9 +32,10 @@ const AddProduct = () => {
     return (
         <div className='w-50 mx-auto my-5'>
             <h3 className='text-center'>Add a new Product</h3>
-            <Nav.Link className='w-25 mx-auto text-center btn btn-info text-white my-3' as={Link} to="/manageinventories">All Products</Nav.Link>
-
-            <form className='d-flex flex-column w-50 mx-auto my-5' onSubmit={handleSubmit(onSubmit)}>
+            <div className='text-center'>
+                <Link className='btn btn-info text-white' to="/manageinventories">All Products</Link>
+            </div>
+            <form className='d-flex flex-column mx-auto my-5' onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-2' placeholder='Name' {...register("name", { required: true, maxLength: 30 })} />
                 <input className='mb-2' placeholder='Price' type="number" {...register("price")} />
                 <input className='mb-2' placeholder='Quantity' type="number" {...register("quantity")} />
@@ -42,8 +43,9 @@ const AddProduct = () => {
                 <input className='mb-2' placeholder='Image URL' type="text" {...register("img")} />
                 <textarea className='mb-2' placeholder='Description' {...register("description")} />
                 {errors.exampleRequired && <span>This field is required</span>}
-
-                <input className='btn btn-success w-50 mx-auto' type="submit" value="Add Service" />
+                <div className='text-center'>
+                    <input className='btn btn-success' type="submit" value="Add Service" />
+                </div>
             </form>
 
         </div>
