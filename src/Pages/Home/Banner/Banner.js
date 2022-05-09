@@ -7,7 +7,7 @@ const Banner = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-sm-6">
-                        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
+                        <h2 className='font-weight-bold'>STOWAGE, <br /> We take care your product!</h2>
                         <button className='btn btn-dark'>Contruct US</button>
                     </div>
                 </div>
