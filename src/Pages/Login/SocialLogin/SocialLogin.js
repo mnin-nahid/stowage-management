@@ -21,7 +21,12 @@ const SocialLogin = () => {
     }
 
     if (user) {
-        navigate(from, { replace: true });
+        if(from){
+            navigate(from, { replace: true });
+        }
+        else{
+            navigate('/');
+        }
     }
     return (
         <div>

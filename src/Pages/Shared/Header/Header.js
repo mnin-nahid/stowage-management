@@ -21,13 +21,12 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mx-auto">
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/dashboard">Dashboard</Nav.Link>
+                            <Nav.Link as={Link} to="/manageinventories">ManageInventories</Nav.Link>
                             <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
                         </Nav>
                         <Nav className="ms-auto">
                             {
                                 user ?
-                                    // <button className='btn btn-link text-white' as={Link} onClick={handleSignOut}>Sign out</button>
                                     <>
                                         <Nav.Link as={Link} to='/addnewitem'>Add Item</Nav.Link>
                                         <Nav.Link as={Link} to='/myitems'>My Items</Nav.Link>
@@ -41,7 +40,6 @@ const Header = () => {
 
                             }
 
-                            {/* <Nav.Link as={Link} onClick={handleSignOut} to="/logout">Sign out</Nav.Link> */}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

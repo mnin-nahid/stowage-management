@@ -12,6 +12,7 @@ const AddProduct = () => {
 
     const onSubmit = data => {
 
+
         data.email = user.email;
 
         //send data to the server
@@ -27,6 +28,7 @@ const AddProduct = () => {
             .then(result => {
                 console.log(result);
             })
+
     };
 
     return (

@@ -14,6 +14,7 @@ const ProductDetails = () => {
         const lastQuantity = (parseInt(quantity) + parseInt(e.target.quantity.value)) + ' ';
         const newQuantity = { quantity: lastQuantity, ...rest };
         setProduct(newQuantity);
+        e.target.reset();
 
         try {
             const res = await axios.put(`http://localhost:5000/product/${productId}`, { quantity: lastQuantity });

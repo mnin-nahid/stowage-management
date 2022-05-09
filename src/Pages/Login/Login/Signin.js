@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -20,24 +21,27 @@ const Signin = () => {
     let from = location.state?.from?.pathname;
 
     //Handle Sign in
-    const handlesignin = e => {
+    const handlesignin = async e => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
-        signInWithEmailAndPassword(email, password);
+        await signInWithEmailAndPassword(email, password);
+        const { data } = await axios.post('http://localhost:5000/signin', { email });
+        localStorage.setItem('accessToken', data.accessToken);
+        navigate(from, { replace: true });
 
     };
     const [userEmail, setUserEmail] = useState('');
-    const userEmailFind = e =>{
+    const userEmailFind = e => {
         const email = e.target.value;
         setUserEmail(email);
     };
     const resetPassword = async () => {
-        if(userEmail){
+        if (userEmail) {
             await sendPasswordResetEmail(userEmail);
             alert('Sent email');
         }
-        else{
+        else {
             alert('Enter your email.')
         }
     };
@@ -49,7 +53,7 @@ const Signin = () => {
     if (user) {
         navigate(from, { replace: true });
     }
-    if(loading){
+    if (loading) {
         return <Looding></Looding>
     }
 
@@ -105,7 +109,7 @@ const Signin = () => {
                     Are you new hear <Link to='/signup'>Sign up</Link> now
                 </p>
                 <p className="forgot-password text-start pt-3">
-                     <button className='btn btn-link text-primary' onClick={resetPassword}>Forgot password?</button>
+                    <button className='btn btn-link text-primary' onClick={resetPassword}>Forgot password?</button>
                 </p>
             </form>
             <SocialLogin></SocialLogin>
