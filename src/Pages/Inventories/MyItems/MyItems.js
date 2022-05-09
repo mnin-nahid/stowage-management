@@ -14,7 +14,7 @@ const MyItems = () => {
     useEffect(() => {
         const getProduct = async () => {
             const email = user.email;
-            const url = `http://localhost:5000/myitems/${email}`;
+            const url = `https://mysterious-beach-33208.herokuapp.com/myitems/${email}`;
             try {
                 const { data } = await axios.get(url, {
                     headers: {
@@ -24,7 +24,6 @@ const MyItems = () => {
                 setProduct(data);
             }
             catch (error) {
-                console.log(error.message);
                 if (error.response.status === 401 || error.response.status === 403) {
                     signOut(auth);
                     navigate('/signin')
@@ -36,7 +35,7 @@ const MyItems = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://mysterious-beach-33208.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: "DELETE",
             })

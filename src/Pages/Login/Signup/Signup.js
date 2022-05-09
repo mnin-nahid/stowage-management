@@ -28,7 +28,6 @@ const Signup = () => {
         const password = e.target.password.value;
 
         createUserWithEmailAndPassword(email, password, {sendEmailVerification: 'true'});
-        // console.log(email, password)
     }
 
 

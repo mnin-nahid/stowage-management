@@ -7,10 +7,10 @@ const WhoAreWe = () => {
             <h2 className='text-center font-weight-normal my-4'>Who Are We</h2>
             <div className="container">
                 <div className="row">
-                    <div className="col-6">
+                    <div className="col-md-6 ">
                         <img src={warehouse} alt="" />
                     </div>
-                    <div className="col-6">
+                    <div className="col-md-6">
                         <h3 className='text-primary'>
                             Warehousing
                         </h3>

@@ -17,7 +17,7 @@ const ProductDetails = () => {
         e.target.reset();
 
         try {
-            const res = await axios.put(`http://localhost:5000/product/${productId}`, { quantity: lastQuantity });
+            const res = await axios.put(`https://mysterious-beach-33208.herokuapp.com/product/${productId}`, { quantity: lastQuantity });
         }
         catch (error) {
             console.log(error.message)
@@ -30,7 +30,7 @@ const ProductDetails = () => {
         const newQuantity = { quantity: lastQuantity, ...rest };
         setProduct(newQuantity);
         try {
-            const res = await axios.put(`http://localhost:5000/product/${productId}`, { quantity: lastQuantity });
+            const res = await axios.put(`https://mysterious-beach-33208.herokuapp.com/product/${productId}`, { quantity: lastQuantity });
         }
         catch (error) {
             console.log(error.message)

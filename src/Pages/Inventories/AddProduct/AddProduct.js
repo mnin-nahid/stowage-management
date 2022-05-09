@@ -16,7 +16,7 @@ const AddProduct = () => {
         data.email = user.email;
 
         //send data to the server
-        const url = 'http://localhost:5000/product';
+        const url = 'https://mysterious-beach-33208.herokuapp.com/product';
         fetch(url, {
             method: 'POST',
             headers: {

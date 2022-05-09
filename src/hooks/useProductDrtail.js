@@ -4,7 +4,7 @@ const useProductDrtail = productId =>{
     const [product, setProduct] = useState({});
 
     useEffect( ()=>{
-        fetch(`http://localhost:5000/product/${productId}`)
+        fetch(`https://mysterious-beach-33208.herokuapp.com/product/${productId}`)
         .then(res => res.json())
         .then(data => setProduct(data));
     },[productId]);

@@ -26,7 +26,7 @@ const Signin = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         await signInWithEmailAndPassword(email, password);
-        const { data } = await axios.post('http://localhost:5000/signin', { email });
+        const { data } = await axios.post('https://mysterious-beach-33208.herokuapp.com/signin', { email });
         localStorage.setItem('accessToken', data.accessToken);
         navigate(from, { replace: true });
 
