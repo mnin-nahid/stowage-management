@@ -27,15 +27,16 @@ const ManageInventories = () => {
             <h3 className='text-center my-3'>All items is hear</h3>
             <Nav.Link className='w-25 mx-auto text-center btn btn-info text-white my-4' as={Link} to="/addnewitem">Add new item</Nav.Link>
 
-
-            {
-                products.map(product => <div className='d-flex justify-content-between border'>
-                    <td> <img className='w-25 border' src={product.img} alt="" /> </td>
-                    <td className='border'>{product.name}</td>
-                    <td className='border'>{product.quantity}</td>
-                    <td> <button onClick={() => handleDelete(product._id)} className='btn btn-danger rounded mx-2 text-decoration-none'>Delete</button> </td>
-                </div>)
-            }
+            <Table>
+                {
+                    products.map(product => <div>
+                        <td> <img className='w-25 border' src={product.img} alt="" /> </td>
+                        <td className='border'>{product.name}</td>
+                        <td className='border'>{product.quantity}</td>
+                        <td> <button onClick={() => handleDelete(product._id)} className='btn btn-danger rounded mx-2 text-decoration-none'>Delete</button> </td>
+                    </div>)
+                }
+            </Table>
         </div >
     );
 };

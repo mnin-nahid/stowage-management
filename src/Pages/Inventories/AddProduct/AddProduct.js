@@ -32,7 +32,7 @@ const AddProduct = () => {
     return (
         <div className='w-50 mx-auto my-5'>
             <h3 className='text-center'>Add a new Product</h3>
-            <Nav.Link className='w-25 mx-auto text-center btn btn-info text-white my-3' as={Link} to="/allproducts">All Products</Nav.Link>
+            <Nav.Link className='w-25 mx-auto text-center btn btn-info text-white my-3' as={Link} to="/manageinventories">All Products</Nav.Link>
 
             <form className='d-flex flex-column w-50 mx-auto my-5' onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-2' placeholder='Name' {...register("name", { required: true, maxLength: 30 })} />

@@ -1,14 +1,14 @@
 import React from 'react';
 import Inventories from '../../Inventories/Inventories/Inventories';
 import Banner from '../Banner/Banner';
-import Deshbord from '../Deshbord/Deshbord';
+import OurService from '../OurService/OurService';
 
 const Home = () => {
     return (
         <div>
             <Banner />
             <Inventories />
-            <Deshbord></Deshbord>
+            <OurService />
         </div>
     );
 };

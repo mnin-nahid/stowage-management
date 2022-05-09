@@ -40,66 +40,65 @@ const Footer = () => {
                         <div className='row mt-3'>
                             <div className='col-md-3 col-lg-4 col-xl-3 mx-auto mb-4'>
                                 <h6 className='text-uppercase fw-bold mb-4'>
-                                    <i className='fas fa-gem me-3'></i>Company name
+                                    <i className='fas fa-home me-3'></i>STOWAGE-HOME
                                 </h6>
                                 <p>
-                                    Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit.
+                                    Demand forecasting and inventory management can help you run a lean supply chain with a minimal amount of stock.
                                 </p>
                             </div>
 
                             <div className='col-md-2 col-lg-2 col-xl-2 mx-auto mb-4'>
                                 <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
                                 <p>
-                                    <a href='#!' className='text-reset'>
-                                        Angular
-                                    </a>
+                                    <Link to='#' className='text-reset'>
+                                        Leptop
+                                    </Link>
                                 </p>
                                 <p>
-                                    <a href='#!' className='text-reset'>
-                                        React
-                                    </a>
+                                    <Link to='#' className='text-reset'>
+                                        Phone
+                                    </Link>
                                 </p>
                                 <p>
-                                    <a href='#!' className='text-reset'>
-                                        Vue
-                                    </a>
+                                    <Link to='#' className='text-reset'>
+                                        Power Adapter
+                                    </Link>
                                 </p>
                                 <p>
-                                    <a href='#!' className='text-reset'>
-                                        Laravel
-                                    </a>
+                                    <Link to='#' className='text-reset'>
+                                        Tablet
+                                    </Link>
                                 </p>
                             </div>
 
                             <div className='col-md-3 col-lg-2 col-xl-2 mx-auto mb-4'>
                                 <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
                                 <p>
-                                    <a href='#!' className='text-reset'>
-                                        Pricing
-                                    </a>
+                                    <Link to='#' className='text-reset'>
+                                        Notice
+                                    </Link>
                                 </p>
                                 <p>
-                                    <a href='#!' className='text-reset'>
-                                        Settings
-                                    </a>
+                                    <Link to='#' className='text-reset'>
+                                        Privacy Policy
+                                    </Link>
                                 </p>
                                 <p>
-                                    <a href='#!' className='text-reset'>
-                                        Orders
-                                    </a>
+                                    <Link to='#' className='text-reset'>
+                                        Services
+                                    </Link>
                                 </p>
                                 <p>
-                                    <a href='#!' className='text-reset'>
+                                    <Link to='#' className='text-reset'>
                                         Help
-                                    </a>
+                                    </Link>
                                 </p>
                             </div>
 
                             <div className='col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4'>
                                 <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
                                 <p>
-                                    <i className='fas fa-home me-3'></i> New York, NY 10012, US
+                                    <i className='fas fa-home me-3'></i> Mirpur, 1216, Dhaka
                                 </p>
                                 <p>
                                     <i className='fas fa-envelope me-3'></i>
@@ -119,11 +118,11 @@ const Footer = () => {
                 <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
                     © copyright © {year} :
                     <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-                     All rights reserved by Nahid
+                        All rights reserved by Nahid
                     </a>
                 </div>
             </MDBFooter>
-            
+
         </div>
 
     );

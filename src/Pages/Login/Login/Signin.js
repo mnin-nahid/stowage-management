@@ -33,8 +33,13 @@ const Signin = () => {
         setUserEmail(email);
     };
     const resetPassword = async () => {
-        await sendPasswordResetEmail(userEmail);
-        alert('Sent email');
+        if(userEmail){
+            await sendPasswordResetEmail(userEmail);
+            alert('Sent email');
+        }
+        else{
+            alert('Enter your email.')
+        }
     };
 
     if (user) {
