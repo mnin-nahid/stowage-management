@@ -2,6 +2,7 @@ import React from 'react';
 import { useCreateUserWithEmailAndPassword, useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Signup = () => {
     const [
@@ -9,7 +10,7 @@ const Signup = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const navigate = useNavigate();
 
     let errorElement;
@@ -25,7 +26,7 @@ const Signup = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
 
-        createUserWithEmailAndPassword(email, password);
+        createUserWithEmailAndPassword(email, password, {sendEmailVerification: 'true'});
         // console.log(email, password)
     }
 
@@ -79,6 +80,7 @@ const Signup = () => {
                     Alrady have an account? <Link to='/signin'>Sign in</Link> now
                 </p>
             </form>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };

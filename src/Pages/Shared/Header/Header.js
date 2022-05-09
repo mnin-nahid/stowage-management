@@ -29,9 +29,9 @@ const Header = () => {
                                 user ?
                                     // <button className='btn btn-link text-white' as={Link} onClick={handleSignOut}>Sign out</button>
                                     <>
-                                        <Nav.Link>Add Item</Nav.Link>
-                                        <Nav.Link>My Items</Nav.Link>
-                                        <Nav.Link onClick={handleSignOut}>Sign Out</Nav.Link>
+                                        <Nav.Link as={Link} to='/addnewitem'>Add Item</Nav.Link>
+                                        <Nav.Link as={Link} to='/myitems'>My Items</Nav.Link>
+                                        <Nav.Link className='btn btn-danger text-white py-2' onClick={handleSignOut}>Sign Out</Nav.Link>
                                     </>
                                     :
                                     <>

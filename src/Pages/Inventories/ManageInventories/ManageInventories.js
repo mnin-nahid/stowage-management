@@ -1,9 +1,10 @@
 import React from 'react';
 import AllProduct from '../AllProduct/AllProduct';
+import './ManageInventories.css'
 
 const ManageInventories = () => {
     return (
-        <div>
+        <div className='container'>
             <AllProduct></AllProduct>
         </div>
     );

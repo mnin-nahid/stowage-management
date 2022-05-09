@@ -1,0 +1,11 @@
+.top-banner{
+    position: relative;
+    background-image: url('../../../images/6541.jpg');
+    background-color: rgba(255, 255, 255, 0.278);
+    background-size: cover;
+    height: 75vh;
+    background-position: bottom;
+    padding: 150px 0 200px;
+    text-shadow: 5px 5px 5px rgba(255, 140, 0, 0.434);
+
+}

@@ -1,7 +1,8 @@
-import React from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import React, { useState } from 'react';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Signin = () => {
     const navigate = useNavigate();
@@ -11,6 +12,8 @@ const Signin = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+    const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
+
     const location = useLocation();
 
     let from = location.state?.from?.pathname;
@@ -20,11 +23,18 @@ const Signin = () => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
-
-        // console.log(email, password);
         signInWithEmailAndPassword(email, password);
 
-    }
+    };
+    const [userEmail, setUserEmail] = useState('');
+    const userEmailFind = e =>{
+        const email = e.target.value;
+        setUserEmail(email);
+    };
+    const resetPassword = async () => {
+        await sendPasswordResetEmail(userEmail);
+        alert('Sent email');
+    };
 
     if (user) {
         navigate('/');
@@ -34,7 +44,7 @@ const Signin = () => {
         navigate(from, { replace: true });
     }
 
-    // hendle Error
+    // Handle Error
     let errorElement;
     if (error) {
         errorElement = <div>
@@ -49,6 +59,7 @@ const Signin = () => {
                 <div className="mb-3">
                     <label>Email address</label>
                     <input
+                        onChange={userEmailFind}
                         type="email"
                         name='email'
                         className="form-control"
@@ -85,9 +96,10 @@ const Signin = () => {
                     Are you new hear <Link to='/signup'>Sign up</Link> now
                 </p>
                 <p className="forgot-password text-start pt-3">
-                    Forgot <a href="#">password?</a>
+                     <button className='btn btn-link text-primary' onClick={resetPassword}>Forgot password?</button>
                 </p>
             </form>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };

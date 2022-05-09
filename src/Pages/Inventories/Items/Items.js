@@ -10,14 +10,13 @@ const Items = () => {
     const navigate = useNavigate();
 
     const handleProductDetails = id =>{
-        navigate(`/inventori/${id}`);
+        navigate(`/product/${id}`);
     }
     return (
         <div>
-            <h3>This is items section: {products.length}</h3>
             <div className='items-container container'>
                 {
-                    homePageProducts.map(product => <div key={product.id}>
+                    homePageProducts.map(product => <div key={product._id}>
                         <img src={product.img} alt="" />
                         <h5>{product.name}</h5>
                         <p>{product.price}</p>
