@@ -26,18 +26,30 @@ const ManageInventories = () => {
         <div className='container'>
             <h3 className='text-center my-3'>All items is hear</h3>
             <div className='text-center'>
-                <Link className='w-25 mx-auto text-center btn btn-info text-white my-4' as={Link} to="/addnewitem">Add new item</Link>
+                <Link className='text-center btn btn-info text-white my-4' to="/addnewitem">Add new item</Link>
             </div>
 
-            <Table>
-                {
-                    products.map(product => <div className='text-center justify-content-center'>
-                        <td> <img className='w-25 border' src={product.img} alt="" /> </td>
-                        <td className='border'>{product.name}</td>
-                        <td className='border'>{product.quantity}</td>
-                        <td> <button onClick={() => handleDelete(product._id)} className='btn btn-danger rounded mx-2 text-decoration-none'>Delete</button> </td>
-                    </div>)
-                }
+            <Table striped bordered hover responsive>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Images</th>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Operation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        products.map(product => <tr className='text-center justify-content-center'>
+                            <td>{product._id}</td>
+                            <td> <img className='border' src={product.img} alt="" /> </td>
+                            <td className='border'>{product.name}</td>
+                            <td className='border'>{product.quantity}</td>
+                            <td> <button onClick={() => handleDelete(product._id)} className='btn btn-danger rounded mx-2 text-decoration-none'>Delete</button> </td>
+                        </tr>)
+                    }
+                </tbody>
             </Table>
         </div >
     );
