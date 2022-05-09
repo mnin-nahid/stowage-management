@@ -98,7 +98,7 @@ const Signin = () => {
                 </div>
                 <div className="d-grid">
                     <button type="submit" className="btn btn-dark">
-                        Submit
+                        Sign In
                     </button>
                 </div>
                 <p className="forgot-password text-end pt-3">
