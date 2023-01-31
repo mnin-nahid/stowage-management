@@ -1,12 +1,11 @@
-# Getting Started
+# Project name : STOWAGE HOME
+*This is a warehouse management website project.
 
-## Project name : STOWAGE HOME
 
-### This website is designed to keep track of any warehouse product
 
 live site server [Link server](https://mysterious-beach-33208.herokuapp.com/).
 
-live site client [Link client](https://stowage-home.web.app/).
+# live site [Link client](https://stowage-home.web.app/).
 
 
 ## How to work in this website
