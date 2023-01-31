@@ -43,5 +43,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "* This is a warehouse management website project.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnin-nahid/stowage-management.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnin-nahid/stowage-management/issues"
+  },
+  "homepage": "https://github.com/mnin-nahid/stowage-management#readme"
 }
